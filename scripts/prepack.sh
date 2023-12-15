@@ -17,10 +17,9 @@ done
 svgr --out-dir components \
 	--no-index \
 	--typescript \
-	--template template.js \
+	--template template.cjs \
 	--svg-props role=img \
 	--svg-props aria-hidden=true \
-	--svg-props fill=currentColor \
 	--no-svgo -- svgs
 
 rm -rf svgs

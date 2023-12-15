@@ -15,6 +15,7 @@
   "contributors": [
     "Federico Brigante <me@fregante.com> (https://fregante.com)"
   ],
+  "type": "module",
   "exports": {
     "./*": "./components/*.tsx"
   },
