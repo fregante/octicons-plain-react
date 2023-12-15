@@ -25,6 +25,15 @@ import AlertIcon from "octicons-plain-react/alert";
 
 ## Publishing
 
+1. GitHub Actions runs `bump-and-publish.sh`
+2. It fetches the latest version of @primer/octicons
+3. It sets its own version to match that
+4. The version script is called and it installs its own version
+5. `git add` is called to ensure these changes are saved in the tag itself
+6. If the version change is successful, `npm publish` is run
+7. Publishing calls `prepack.sh`, which builds the components and runs all the transforms
+8. The new files are published to npm
+
 ## License
 
 MIT © GitHub Inc
