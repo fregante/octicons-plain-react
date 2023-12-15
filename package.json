@@ -1,6 +1,6 @@
 {
   "name": "octicons-plain-react",
-  "version": "19.8.0",
+  "version": "19.8.1",
   "description": "A rebuild of @primer/octicons to use lightweight React components",
   "keywords": [
     "GitHub",
