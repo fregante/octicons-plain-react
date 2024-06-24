@@ -8,6 +8,8 @@ on:
 jobs:
   check-and-update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,6 +18,6 @@ jobs:
       - uses: fregante/setup-git-user@v2
       - name: Try updating the version
         run: ./scripts/bump-and-publish.sh
-      - run: git push --follow-tags
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: git push --follow-tags
