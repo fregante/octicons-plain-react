@@ -3,5 +3,5 @@
 set -e
 
 if npm version "$(npm info @primer/octicons version)"; then
-	npm publish
+	npm publish --provenance
 fi
