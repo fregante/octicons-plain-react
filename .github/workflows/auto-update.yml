@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           registry-url: 'https://registry.npmjs.org'
-      - uses: refined-github/setup-git-user@v2
+      - uses: fregante/setup-git-user@v2
       - name: Try updating the version
         run: ./scripts/bump-and-publish.sh
         env:
