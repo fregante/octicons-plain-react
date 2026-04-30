@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: 24
       - uses: fregante/setup-git-user@v2
       - name: Try updating the version
         run: ./scripts/bump-and-publish.sh
